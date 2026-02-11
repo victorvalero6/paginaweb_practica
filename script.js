@@ -11,8 +11,7 @@ function getOrCreateErrorEl(inputEl) {
     el.id = id;
     el.className = "field-error";
 
-    // Put error right after the input (before the <br>)
-    var nextEl = inputEl.nextElementSibling; // usually <br>
+    var nextEl = inputEl.nextElementSibling; /
     if (nextEl) {
       inputEl.parentNode.insertBefore(el, nextEl);
     } else {
